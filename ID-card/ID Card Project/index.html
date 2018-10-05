@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>ID card</title>
+<link rel="stylesheet" href="css/style.css" >
+<link rel="stylesheet" src="print.css" type="text/css" media="print" />
+</head>
+
+<body>
+  
+<h1>Let's Create an ID card</h1>
+<div align="center" id="container">
+<form id="myForm" action="" method="post">
+  <label for="firstName">First Name:</label><input id="firstName" type="text"/><br>
+  <label for="lastName">Last Name:</label><input id="lastName" type="text"><br>
+ <label for="age">Age:</label><input id="age" type="text"><br>
+  <label for="phoneNumber">Phone Number:</label><input id="phoneNumber" type="text"><br>
+  <label for="address">Address:</label><input id="address" type="address"><br>
+  
+   <!--The checkbox input added extra by me to include signature-->
+  Include Signature<input type="checkbox" id="signature"><br>
+  
+</form><br>
+<button id="btn">Get Id Card</button>
+</div>
+<div style=" background-color:#175657;" id="idCard">
+
+<img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+
+<p id="postFullName"></p>
+
+<p id="postAge"></p>
+
+<p id="postPhoneNumber"></p>
+
+<p id="postAddress"></p>
+<button id="btnPrint" onclick="printId('idCard')">Print Your ID Card</button>
+</div>
+<!--Button To print ID Card-->
+
+
+<script src="js/script.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>
